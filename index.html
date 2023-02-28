@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Set character encoding -->
+        <meta charset="UTF-8">
+
+        <!-- Scale website for different devices -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Page title -->
+        <title>UoG Programming Society</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/resources/images/favicon.ico">
+        
+        <!-- Import CSS -->
+        <!-- <link href="styles/home.css" type="text/css" rel="stylesheet">-->
+
+        <style>
+            * { 
+            box-sizing: border-box;
+            font-family: Outfit, sans-serif;
+            color: white;
+            }
+
+            h1, a, a:visited {
+                color: #10b819;
+            }
+
+            #backgroundVideo {
+                /* Set position on page */
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+
+                /* Set size of video to always fill screen */
+                min-width: 100%;
+                min-height: 100%;
+
+                /* Disable user interaction with video */
+                pointer-events: none;
+            }
+
+
+            #pageInfo {
+                padding: 10px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+                background: rgba(0, 0, 0, 0.5);
+                width: 50%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="/resources/videos/background.mp4" type="video/mp4">
+        </video>
+
+        <div id="pageInfo">
+            <h1>
+                UoG Programming Society
+            </h1>
+            <p>
+                Hello! Welcome to the Programming Society. This is a temporary page
+                while we build the real website.
+            </p>
+            <p>
+                The source code for this site, including all resources and scripts can
+                be found in our
+                <a href="https://github.com/GDL109R/prog-soc">Github Repository</a>
+                .
+            </p>
+        </div>
+    </body>
+</html>
